@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Set 1",
+      "setup": "g++ -o a.out ./Homework/HW11/hw11-1-basic-function.cpp",
+      "run": "./a.out",
+      "input": "3\r\n4\r\n5\r\n",
+      "output": "Summation = 12 (Calculate by Additional Function)",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
