@@ -11,4 +11,27 @@
     Output:
         Summation = 12 (Calculate by Additional Function)
 */
+#include <stdio.h>
 
+struct Sumo {
+    int sum ;
+    int a[3] ;
+    int put ;
+} ; //end struct
+
+int sum(int isum) {
+    struct Sumo a[3] ;
+    for ( int i = 0 ; i < 3 ; i++ ) {
+        printf( "Input %d :\n", i + 1 ) ;
+        scanf( "%d", &a[i].put ) ;
+        isum += ( a[i].put ) ;
+    } //end for
+    return isum ;  
+} //end function
+
+int main( ) {
+    int isum = 0 ;
+    int function = sum( isum ) ;
+    printf( "Summation = %d (Calculate by Additional Function) ", function ) ;
+    return 0 ;
+} //end main
